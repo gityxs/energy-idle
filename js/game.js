@@ -584,9 +584,8 @@ class Game {
         this.techIdsToResearch = []
         for (let techId in TECHS) {
             if (this.techIdsDone.indexOf(techId) == -1) {
-                if (this.evalReqs(TECHS[techId].reqs)) {
-                    this.techIdsToResearch.push(techId)
-                }
+                if (this.evalReqs(TECHS[techId].reqs)) this.techIdsToResearch.push(techId)
+                if (this.techIdsToResearch.length >= 9) break
             }
         }
         //---

@@ -193,7 +193,7 @@ var TplScreenGame = function(data) {
                                                 html += '<li><span>Buy generators more and more</span></li>'
                                                 html += '<li><span>Research techs to improve generators</span></li>'
                                                 html += '<li><span>Evolve to upgrade Generator #0</span></li>'
-                                                html += '<li><span>Ascend to restart with Omega and bonuses</span></li>'
+                                                html += '<li><span>Ascend to restart with Omega and boosters</span></li>'
                                                 html += '<li><span>Beat the game by reaching Evolution #11</span></li>'
                                             html += '</ol>'
                                             html += '<div class="mb-2"><span class="text-white">Good luck!</span></div>'
