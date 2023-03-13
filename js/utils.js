@@ -40,7 +40,21 @@ function formatNumber(value, fixed=0) {
     //---
     let ret = '', symbol = null
     //---
-    if (absValue >= 1e27) { ret = (Math.round(100 * absValue / 1e27) / 100); symbol = 'B'; }
+    if (absValue >= 1e30) {
+        let start = 33
+        for (let i = 0; i < 26; ++i) {
+            for (let j = 0; j < 26; ++j) {
+                let limit = Math.pow(10, start)
+                if (absValue < limit) {
+                    ret = (Math.round(100 * absValue / (limit / 1e3)) / 100); symbol = String.fromCharCode(97 + i) + String.fromCharCode(97 + j);
+                    break
+                }
+                else start += 3
+            }
+            if (ret != '') break
+        }
+    }
+    else if (absValue >= 1e27) { ret = (Math.round(100 * absValue / 1e27) / 100); symbol = 'B'; }
     else if (absValue >= 1e24) { ret = (Math.round(100 * absValue / 1e24) / 100); symbol = 'Y'; }
     else if (absValue >= 1e21) { ret = (Math.round(100 * absValue / 1e21) / 100); symbol = 'Z'; }
     else if (absValue >= 1e18) { ret = (Math.round(100 * absValue / 1e18) / 100); symbol = 'E'; }

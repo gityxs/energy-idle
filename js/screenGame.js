@@ -720,11 +720,12 @@ class ScreenGame {
             let req = tech.reqs[0]
             //---
             node = document.getElementById('tech-name-' + currentTechHtmlId)
-            if (req.type == 'building') html = 'Build'
+            html = 'Build'
             if (node.innerHTML != html) node.innerHTML = html
             //---
             node = document.getElementById('tech-desc-' + currentTechHtmlId)
             if (req.type == 'building') html = req.value + ' Generators #' + req.key
+            else if (req.type == 'allbuildings') html = 'All buildings to ' + req.value
             if (node.innerHTML != html) node.innerHTML = html
             //---
             node = document.getElementById('tech-descLine-' + currentTechHtmlId)
