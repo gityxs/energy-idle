@@ -259,7 +259,7 @@ var TplScreenGame = function(data) {
                             html += '<div role="presentation" class="nav-item px-2 pt-2">'
                                  html += '<div class="form-check">'
                                     html += '<input class="form-check-input" type="checkbox" id="autoResearch" onclick="window.App.game.doAutoResearch()">'
-                                    html += '<label class="form-check-label" for="autoResearch">Auto Research</label>'
+                                    html += '<label class="form-check-label" for="autoResearch">Auto Research (< 1 millisecond)</label>'
                                  html += '</div>'
                             html += '</div>'
                             html += '<div role="presentation" class="nav-item">'

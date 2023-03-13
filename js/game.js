@@ -595,7 +595,7 @@ class Game {
             //---
             let boosterCoeff = Math.pow(1.1, this.currentBoosterCount[2])
             let todo = TECHS[this.techIdsToResearch[0]].cost / (this.energy.prod * boosterCoeff)
-            if (todo <= 0.001) this.doResearch(this.techIdsToResearch[0])
+            if (todo <= 0.001) this.doResearch(0)
         }
         //---
         this.techIdsToUnlock = []
