@@ -727,8 +727,6 @@ class Game {
             //---
             this.stats.currentRun = this.generateStatsObject()
             //---
-            this.stats.allTime.omegaGained += omegaGained
-            //---
             this.init()            
         }
     }
