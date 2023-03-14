@@ -1,1 +1,1 @@
-# energy-idle
+# Energy Idle
