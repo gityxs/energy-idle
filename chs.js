@@ -394,7 +394,7 @@ var cnRegReplace = new Map([
     [/^([\d\.]+)e([\d\.,]+) points$/, '$1e$2 点数'],
     [/^([\d\.]+) Generators \#([\d\.]+)$/, '$1 发电机 #$2'],
     [/^Improve Generator \#([\d\.]+)$/, '改进发电机 #$1'],
-    [/^Generator \#([\d\.]+) next level$/, '发电机 #$1 下一级'],
+    [/^Generator \#([\d\.]+) next level$/, '发电机 #$1 升一级'],
     [/^Evolution \#([\d\.]+)$/, '进化 #$1'],
     [/^Evolution \#([\d\.]+)$/, '进化 #$1'],
     [/^Have ([\d\.]+) Generators \#([\d\.]+)$/, '拥有 $1 发电机 #$2'],
